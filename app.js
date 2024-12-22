@@ -19,7 +19,6 @@ const targetProxy = (req, res, next) => {
 
 
 app.get('/login', (req, res, next) => {
-    ;
     if (req.query.url)
     {
         url = req.query.url;
