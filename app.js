@@ -36,7 +36,7 @@ app.use('/', targetProxy, (req, res, next) => {
     })(req, res, next);
 });
 
-const port = 8000;
+const port = process.env.PORT||8000;
 app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}/login`);
 });
